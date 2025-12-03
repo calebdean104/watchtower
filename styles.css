@@ -726,3 +726,500 @@ body {
         padding: 4rem 1rem;
     }
 }
+
+/* New Pages Styles */
+
+/* Page Header */
+.page-header {
+    padding: 10rem 3rem 6rem;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.03;
+    background-image: 
+        linear-gradient(30deg, var(--gold) 12%, transparent 12.5%, transparent 87%, var(--gold) 87.5%, var(--gold)),
+        linear-gradient(150deg, var(--gold) 12%, transparent 12.5%, transparent 87%, var(--gold) 87.5%, var(--gold));
+    background-size: 80px 140px;
+}
+
+.page-header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.page-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 6vw, 5rem);
+    color: var(--white);
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.page-subtitle {
+    font-size: 1.5rem;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+/* Team Page Styles */
+.team-grid-section {
+    padding: 8rem 0;
+    background: var(--white);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+
+.team-member {
+    text-align: center;
+    padding: 2rem;
+    background: var(--gray-light);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.team-photo-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--gold);
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-initials {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+.team-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.75rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.team-role {
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    font-size: 1.125rem;
+}
+
+.team-branch {
+    color: var(--gray);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.team-bio {
+    color: var(--navy);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Advisory Board */
+.advisory-section {
+    padding: 4rem 0;
+    border-top: 2px solid var(--gold);
+}
+
+.advisory-intro {
+    font-size: 1.25rem;
+    color: var(--navy);
+    max-width: 800px;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.advisor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.advisor-item {
+    padding: 2rem;
+    background: var(--gray-light);
+    border-left: 4px solid var(--gold);
+}
+
+.advisor-item h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.advisor-item p {
+    color: var(--navy);
+    line-height: 1.7;
+}
+
+/* Culture Page Styles */
+.values-section {
+    padding: 8rem 0;
+    background: var(--white);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.value-card {
+    padding: 3rem 2rem;
+    background: var(--gray-light);
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    background: var(--white);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.value-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.75rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.value-card p {
+    color: var(--navy);
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+
+.culture-details {
+    padding: 8rem 0;
+    background: var(--gray-light);
+}
+
+.culture-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.culture-points {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.culture-point {
+    padding-left: 3rem;
+    position: relative;
+}
+
+.culture-point::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--gold);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.culture-point h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.75rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.culture-point p {
+    color: var(--navy);
+    line-height: 1.8;
+    font-size: 1.125rem;
+}
+
+.testimonial-section {
+    padding: 8rem 3rem;
+    background: var(--navy);
+    text-align: center;
+}
+
+.testimonial-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.quote-icon {
+    font-size: 6rem;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.testimonial-quote {
+    font-size: 1.75rem;
+    color: var(--white);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.testimonial-author strong {
+    color: var(--gold);
+    font-size: 1.25rem;
+}
+
+.testimonial-author span {
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+/* Portfolio Page Styles */
+.portfolio-stats {
+    padding: 4rem 3rem;
+    background: var(--gray-light);
+}
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.portfolio-grid-section {
+    padding: 8rem 0;
+    background: var(--white);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.portfolio-card {
+    padding: 2.5rem;
+    background: var(--gray-light);
+    border-radius: 8px;
+    border-left: 4px solid var(--gold);
+    transition: all 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    background: var(--white);
+}
+
+.portfolio-category {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.portfolio-company {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.portfolio-founder {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-description {
+    color: var(--navy);
+    line-height: 1.7;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background: var(--navy);
+    color: var(--white);
+    padding: 0.375rem 0.875rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.featured-story {
+    padding: 8rem 0;
+    background: var(--gray-light);
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.story-lead {
+    font-size: 1.5rem;
+    color: var(--navy);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.story-text p {
+    color: var(--navy);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.story-quote {
+    border-left: 4px solid var(--gold);
+    padding-left: 2rem;
+    margin: 2rem 0;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--navy);
+    line-height: 1.8;
+}
+
+.story-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.story-stat {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.story-stat-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.story-stat-label {
+    color: var(--navy);
+    font-size: 1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 8rem 3rem;
+    background: var(--navy);
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.cta-text {
+    font-size: 1.25rem;
+    color: var(--gray);
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+/* Responsive for new pages */
+@media (max-width: 1024px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 8rem 2rem 4rem;
+    }
+
+    .team-grid,
+    .values-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 2rem;
+    }
+}
